@@ -19,7 +19,7 @@
 
 ```sh
 python3 source_book.py data/samples.json
-python3 -m unittest -v
+python3 -m unittest discover -s tests -v
 ```
 
 资料读取命令列出各表记录数；测试检查交叉引用与格式，不生成分析结果。

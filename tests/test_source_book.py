@@ -9,7 +9,7 @@ from source_book import load
 class SourceBookTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.book = load(Path(__file__).parent / "data" / "samples.json")
+        cls.book = load(Path(__file__).resolve().parents[1] / "data" / "samples.json")
 
     def test_references(self):
         for detail, key, master, master_key in REFERENCES:
